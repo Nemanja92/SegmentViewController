@@ -1,0 +1,16 @@
+PODS:
+  - SegmentViewController (0.1.0)
+
+DEPENDENCIES:
+  - SegmentViewController (from `../`)
+
+EXTERNAL SOURCES:
+  SegmentViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SegmentViewController: 7be8485b372542c77f122e6a7d0d9f6d51a62ea7
+
+PODFILE CHECKSUM: ed6c017413cb132ad33c3b194899939b425f1bdc
+
+COCOAPODS: 1.2.1

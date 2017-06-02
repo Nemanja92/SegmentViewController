@@ -1,0 +1,22 @@
+{
+  "name": "SegmentViewController",
+  "version": "0.1.0",
+  "summary": "A short description of SegmentViewController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Nemanja92/SegmentViewController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Nemanja92": "nemanja92@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/Nemanja92/SegmentViewController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SegmentViewController/Classes/**/*"
+}
