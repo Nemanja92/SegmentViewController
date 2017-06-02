@@ -1,18 +1,18 @@
 /*
-Copyright 2017 Nemanja Ignjatovic
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
+ Copyright 2017 Nemanja Ignjatovic
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
 
 
 import UIKit
 
 
-enum TabAnimationType {
+public enum TabAnimationType {
     case none
     case whileScrolling
     case end
@@ -20,47 +20,47 @@ enum TabAnimationType {
 
 
 
-class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIScrollViewDelegate {
+open class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIScrollViewDelegate {
     
-    var delegate: SegmentViewControllerDelegate!
-    var dataSource: SegmentViewControllerDataSource!
+    public var delegate: SegmentViewControllerDelegate!
+    public var dataSource: SegmentViewControllerDataSource!
     
     private var fixTabWidth = false
     
     
-    var tabTagBegin = 10
-    var backgroundColor = UIColor.white
-    var tabFontDefault = UIFont.systemFont(ofSize: 12)
-    var tabFontSelected = UIFont.systemFont(ofSize: 12)
-    var tabTextColorDefault = UIColor.brown
-    var tabTextColorSelected = UIColor.brown
-    var tabWidth: CGFloat = 128.0
-    var tabHeight: CGFloat = 44.0
-    var tabAnimationType = TabAnimationType.none
-    var indicatorColor = UIColor.red
-    var indicatorHeight: CGFloat = 2.0
-    var indicatorWidth: CGFloat = 128.0
-    var padding: CGFloat = 0.0
-    var leadingPadding: CGFloat = 0.0
-    var trailingPadding: CGFloat = 0.0
-    var fixIndicatorWidth = true
-    var defaultDisplayPageIndex: Int = 0
-    var animationTabDuration: CGFloat = 0.3
-    var pageViewCtrlBackgroundColor  = UIColor.white
-    var tabContentBackgroundColor = UIColor.clear
-    var pageViewController = UIPageViewController()
-    var contentViewControllers = [UIViewController]()
-    var contentViews = [UIView]()
-    var tabContentView = UIScrollView()
-    var tabViews: [UIView] = []
-    var indicatorView = UIView()
-    var needsReload: Bool = true  
-    var leftTabOffsetWidth: CGFloat = 0
-    var rightTabOffsetWidth: CGFloat = 0
-    var leftMinusCurrentWidth: CGFloat = 0
-    var rightMinusCurrentWidth: CGFloat = 0
-    var currentPageIndex: Int = 0
-    var enableTabAnimationWhileScrolling: Bool = true
+    public var tabTagBegin = 10
+    public var backgroundColor = UIColor.white
+    public var tabFontDefault = UIFont.systemFont(ofSize: 12)
+    public var tabFontSelected = UIFont.systemFont(ofSize: 12)
+    public var tabTextColorDefault = UIColor.brown
+    public var tabTextColorSelected = UIColor.brown
+    public var tabWidth: CGFloat = 128.0
+    public var tabHeight: CGFloat = 44.0
+    public var tabAnimationType = TabAnimationType.none
+    public var indicatorColor = UIColor.red
+    public var indicatorHeight: CGFloat = 2.0
+    public var indicatorWidth: CGFloat = 128.0
+    public var padding: CGFloat = 0.0
+    public var leadingPadding: CGFloat = 0.0
+    public var trailingPadding: CGFloat = 0.0
+    public var fixIndicatorWidth = true
+    public var defaultDisplayPageIndex: Int = 0
+    public var animationTabDuration: CGFloat = 0.3
+    public var pageViewCtrlBackgroundColor  = UIColor.white
+    public var tabContentBackgroundColor = UIColor.clear
+    public var pageViewController = UIPageViewController()
+    public var contentViewControllers = [UIViewController]()
+    public var contentViews = [UIView]()
+    public var tabContentView = UIScrollView()
+    public var tabViews: [UIView] = []
+    public var indicatorView = UIView()
+    public var needsReload: Bool = true
+    public var leftTabOffsetWidth: CGFloat = 0
+    public var rightTabOffsetWidth: CGFloat = 0
+    public var leftMinusCurrentWidth: CGFloat = 0
+    public var rightMinusCurrentWidth: CGFloat = 0
+    public var currentPageIndex: Int = 0
+    public var enableTabAnimationWhileScrolling: Bool = true
     
     
     // life cycle
@@ -70,7 +70,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
         commonInit()
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         commonInit()
         
@@ -78,7 +78,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     
     
     
-    override func loadView() {
+    override open func loadView() {
         self.view = UIView(frame: UIScreen.main.bounds)
         self.view.backgroundColor = backgroundColor
         self.view.addSubview(setuptabContentView())
@@ -87,7 +87,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     }
     
     
-    override func viewWillLayoutSubviews() {
+    override open func viewWillLayoutSubviews() {
         
         reloadDataIfNeed()
         layoutSubviews()
@@ -114,7 +114,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     //UIPageViewControllerDataSource
     
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         let index: Int = self.contentViewControllers.index(of: viewController)!
         
@@ -125,7 +125,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     }
     
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         let index: Int = self.contentViewControllers.index(of: viewController)!
         if index == self.contentViewControllers.count-1 {
@@ -138,7 +138,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     
     // UIPageViewControllerDelegate
     
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+    public func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         
         if completed {
             let currentPageIndex: Int = self.contentViewControllers.index(of: pageViewController.viewControllers![0])!
@@ -163,7 +163,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     
     // UIScrollViewDelegate
     
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if self.tabAnimationType == .whileScrolling {
             enableTabAnimationWhileScrolling = true
         }
@@ -172,14 +172,14 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     
     
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if self.tabAnimationType == .whileScrolling {
             enableTabAnimationWhileScrolling = false
         }
     }
     
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if self.tabAnimationType == .whileScrolling && enableTabAnimationWhileScrolling {
             let scale: CGFloat = abs((scrollView.contentOffset.x-scrollView.frame.size.width)/scrollView.frame.size.width)
             var offset: CGFloat = 0
@@ -413,7 +413,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     }
     
     
-    func tabViewAt(_ index: Int) -> UIView {
+    public func tabViewAt(_ index: Int) -> UIView {
         return self.tabViews[index]
     }
     
@@ -499,7 +499,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
         tabContentView.showsVerticalScrollIndicator = false
         tabContentView.bounces = false
         tabContentView.contentSize = CGSize.zero
-
+        
         
         return tabContentView
     }
@@ -606,7 +606,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     
 }
 
-@objc protocol SegmentViewControllerDataSource {
+@objc public protocol SegmentViewControllerDataSource {
     
     func numberOfSegmentItemsIn(_ segmentViewController: SegmentViewController) -> Int
     
@@ -620,7 +620,7 @@ class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPa
     
 }
 
-protocol SegmentViewControllerDelegate {
+public protocol SegmentViewControllerDelegate {
     
     
     func segmentViewController(_ segmentViewController: SegmentViewController, didChangeSegmentTo index: Int, fromIndex: Int)
