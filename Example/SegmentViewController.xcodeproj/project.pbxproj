@@ -13,6 +13,14 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		7FD070E11EE19C3C0020F787 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD070D91EE19C3C0020F787 /* FirstViewController.swift */; };
+		7FD070E21EE19C3C0020F787 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD070DA1EE19C3C0020F787 /* FirstViewController.xib */; };
+		7FD070E31EE19C3C0020F787 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD070DB1EE19C3C0020F787 /* ForthViewController.swift */; };
+		7FD070E41EE19C3C0020F787 /* ForthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD070DC1EE19C3C0020F787 /* ForthViewController.xib */; };
+		7FD070E51EE19C3C0020F787 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD070DD1EE19C3C0020F787 /* SecondViewController.swift */; };
+		7FD070E61EE19C3C0020F787 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD070DE1EE19C3C0020F787 /* SecondViewController.xib */; };
+		7FD070E71EE19C3C0020F787 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD070DF1EE19C3C0020F787 /* ThirdViewController.swift */; };
+		7FD070E81EE19C3C0020F787 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD070E01EE19C3C0020F787 /* ThirdViewController.xib */; };
 		9EE9EF0E8392C9C5045D2936 /* Pods_SegmentViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DC30D8B859028B5C95B6EF /* Pods_SegmentViewController_Example.framework */; };
 		F7A5DD9F041D0FD4004031AC /* Pods_SegmentViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B356EA99E58FA24C75F22C66 /* Pods_SegmentViewController_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -28,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1866F4CC86F4AF51722183FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1866F4CC86F4AF51722183FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2F34ED633E49D0B5E7EF23C2 /* Pods-SegmentViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentViewController_Example/Pods-SegmentViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		309A4EDE9116E3DC5A6717AA /* Pods-SegmentViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentViewController_Example/Pods-SegmentViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SegmentViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,10 +49,18 @@
 		607FACE51AFB9204008FA782 /* SegmentViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegmentViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		7FD070D91EE19C3C0020F787 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		7FD070DA1EE19C3C0020F787 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		7FD070DB1EE19C3C0020F787 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
+		7FD070DC1EE19C3C0020F787 /* ForthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForthViewController.xib; sourceTree = "<group>"; };
+		7FD070DD1EE19C3C0020F787 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7FD070DE1EE19C3C0020F787 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		7FD070DF1EE19C3C0020F787 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		7FD070E01EE19C3C0020F787 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 		83957BBD4E49283B0AE1EE37 /* Pods-SegmentViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentViewController_Tests/Pods-SegmentViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9B0FAD2291D3CD8D6220C526 /* SegmentViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SegmentViewController.podspec; path = ../SegmentViewController.podspec; sourceTree = "<group>"; };
+		9B0FAD2291D3CD8D6220C526 /* SegmentViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SegmentViewController.podspec; path = ../SegmentViewController.podspec; sourceTree = "<group>"; };
 		A6E81FB61403F41557CE59AC /* Pods-SegmentViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentViewController_Tests/Pods-SegmentViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AEE902FFED946F778997E382 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AEE902FFED946F778997E382 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B356EA99E58FA24C75F22C66 /* Pods_SegmentViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegmentViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DC30D8B859028B5C95B6EF /* Pods_SegmentViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegmentViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +125,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				7FD070D81EE19C3C0020F787 /* PageControllers */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for SegmentViewController";
@@ -148,6 +165,21 @@
 				AEE902FFED946F778997E382 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		7FD070D81EE19C3C0020F787 /* PageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FD070D91EE19C3C0020F787 /* FirstViewController.swift */,
+				7FD070DA1EE19C3C0020F787 /* FirstViewController.xib */,
+				7FD070DB1EE19C3C0020F787 /* ForthViewController.swift */,
+				7FD070DC1EE19C3C0020F787 /* ForthViewController.xib */,
+				7FD070DD1EE19C3C0020F787 /* SecondViewController.swift */,
+				7FD070DE1EE19C3C0020F787 /* SecondViewController.xib */,
+				7FD070DF1EE19C3C0020F787 /* ThirdViewController.swift */,
+				7FD070E01EE19C3C0020F787 /* ThirdViewController.xib */,
+			);
+			path = PageControllers;
 			sourceTree = "<group>";
 		};
 		AF17AF00FAA4E333DA781991 /* Frameworks */ = {
@@ -248,9 +280,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD070E81EE19C3C0020F787 /* ThirdViewController.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				7FD070E61EE19C3C0020F787 /* SecondViewController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				7FD070E41EE19C3C0020F787 /* ForthViewController.xib in Resources */,
+				7FD070E21EE19C3C0020F787 /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +397,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD070E11EE19C3C0020F787 /* FirstViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				7FD070E31EE19C3C0020F787 /* ForthViewController.swift in Sources */,
+				7FD070E51EE19C3C0020F787 /* SecondViewController.swift in Sources */,
+				7FD070E71EE19C3C0020F787 /* ThirdViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
