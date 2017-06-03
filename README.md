@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/SegmentViewController.svg?style=flat)](http://cocoapods.org/pods/SegmentViewController)
 
 
-<img src="https://j.gifs.com/WnGRXE.gif" width="320" align="middle">
+<center><img src="https://j.gifs.com/WnGRXE.gif" width="320" align="middle"></center>
 
 ## Example
 
