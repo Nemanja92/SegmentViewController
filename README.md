@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/SegmentViewController.svg?style=flat)](http://cocoapods.org/pods/SegmentViewController)
 [![Platform](https://img.shields.io/cocoapods/p/SegmentViewController.svg?style=flat)](http://cocoapods.org/pods/SegmentViewController)
 
-[![Demo CountPages alpha](<div style='position:relative;padding-bottom:178%'><iframe src='https://gfycat.com/ifr/NeglectedCarefreeBoar' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>)]
+<iframe src='https://gfycat.com/ifr/NeglectedCarefreeBoar' frameborder='0' scrolling='no' width='640' height='1136' allowfullscreen></iframe>
 
 ## Example
 
