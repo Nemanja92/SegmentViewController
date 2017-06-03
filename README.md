@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/SegmentViewController.svg?style=flat)](http://cocoapods.org/pods/SegmentViewController)
 [![Platform](https://img.shields.io/cocoapods/p/SegmentViewController.svg?style=flat)](http://cocoapods.org/pods/SegmentViewController)
 
-<iframe src='https://gfycat.com/ifr/NeglectedCarefreeBoar' frameborder='0' scrolling='no' width='640' height='1136' allowfullscreen></iframe>
+<img src="Example/barButton.gif" width="250"/>
 
 ## Example
 
