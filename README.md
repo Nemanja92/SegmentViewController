@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/SegmentViewController.svg?style=flat)](http://cocoapods.org/pods/SegmentViewController)
 [![Platform](https://img.shields.io/cocoapods/p/SegmentViewController.svg?style=flat)](http://cocoapods.org/pods/SegmentViewController)
 
-<img src="Example/barButton.gif" width="250"/>
+<img src="https://gfycat.com/ifr/NeglectedCarefreeBoar" width="250"/>
 
 ## Example
 
