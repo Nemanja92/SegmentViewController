@@ -40,7 +40,7 @@ class ViewController: SegmentViewController, SegmentViewControllerDataSource, Se
         
     }
     
-    // GLViewPagerViewControllerDataSource
+    // SegmentViewControllerDataSource
     
     
     func numberOfSegmentItemsIn(_ segmentViewController: SegmentViewController) -> Int {
@@ -65,11 +65,8 @@ class ViewController: SegmentViewController, SegmentViewControllerDataSource, Se
     }
     
     
-    // GLViewPagerViewControllerDelegate
-    
-    
-    
-    
+    // SegmentViewControllerDelegate
+
     func segmentViewController(_ segmentViewController: SegmentViewController, didChangeSegmentTo index: Int, fromIndex: Int) {
         
         
