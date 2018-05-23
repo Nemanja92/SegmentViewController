@@ -221,7 +221,7 @@ open class SegmentViewController: UIViewController, UIPageViewControllerDelegate
     // user events
     
     
-    func tapInTabView(_ sender: UITapGestureRecognizer) {
+    @objc func tapInTabView(_ sender: UITapGestureRecognizer) {
         let tabIndex: Int = sender.view!.tag-tabTagBegin
         self.selectTab(tabIndex: tabIndex, animate: false)
     }
