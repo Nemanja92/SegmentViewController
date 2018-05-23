@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SegmentViewController'
-  s.version          = '0.2.0'
+  s.version          = '0.1.0'
   s.swift_version    = '4.0'
   s.summary          = 'A powerful paging view controller with indicator bar for iOS.'
 

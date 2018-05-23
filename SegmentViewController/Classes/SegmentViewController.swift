@@ -20,7 +20,7 @@ public enum TabAnimationType {
 
 
 
-open class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIScrollViewDelegate {
+@objcMembers open class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIScrollViewDelegate {
     
     public var delegate: SegmentViewControllerDelegate!
     public var dataSource: SegmentViewControllerDataSource!
