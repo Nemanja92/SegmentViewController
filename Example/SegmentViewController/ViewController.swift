@@ -42,7 +42,6 @@ class ViewController: SegmentViewController, SegmentViewControllerDataSource, Se
     
     // SegmentViewControllerDataSource
     
-    
     func numberOfSegmentItemsIn(_ segmentViewController: SegmentViewController) -> Int {
         return viewControllers.count
     }
